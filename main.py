@@ -1,4 +1,4 @@
-from clr; import; AddReference; 
+from clr import AddReference; 
 AddReference("System"); 
 AddReference("QuantConnect.Algorithm");
 AddReference("QuantConnect.Common");
@@ -23,8 +23,8 @@ class ScheduledUniverseSelectionModelRegressionAlgorithm(QCAlgorithm):
 
     def Initialize(self):
 
-        self.SetStartDate(2010, 2, 1)
-        self.SetEndDate(2012, 9, 1)
+        self.SetStartDate(2015, 1, 1)
+        self.SetEndDate(2020, 1, 1)
         self.quantity = 100
         
         # Add assets you'd like to see
